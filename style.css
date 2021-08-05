@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(24, 180, 219);
+    font-family: 'Roboto';
+}
+.header_div{
+    background: rgb(255, 255, 255);
+    color: rgb(27, 6, 122);
+    font-weight: bold;
+}
+.header_div img{
+width: 100px;
+}
+.main_div{
+    background: goldenrod;
+    padding: 5px;
+    margin-top: 10px;
+    border:3px solid whitesmoke;
+}
+.main_div label{
+    background:rgb(31, 253, 24) ;
+    width: 310px;
+    padding:10px;
+    margin-bottom:0px;
+    box-shadow: 5px 5px 18px greenyellow;
+}
+.main_div button{
+    width:310px;
+    font-size:20px;
+    box-shadow: 5px 5px 18px greenyellow;
+    border:1px solid;
+}
+#camera,#snapshot{
+    width:310px;
+    height:300px;
+    box-shadow: 5px 5px 18px greenyellow;
+    border: 2px solid white;
+}
+.result{
+    float:left;
+    margin-bottom:50px;
+    background:antiquewhite;
+    padding:5px;
+    border-radius:10px;
+    box-shadow:5px 5px 18px  rgb(134, 212, 56);
+    
+}
+.result img{
+    width:75px;
+    float:left;
+}
+.copyright_footer{
+    background:wheat;
+    color:black;
+    line-height:2;
+    text-align: center;
+    bottom:0;
+}
