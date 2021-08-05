@@ -55,3 +55,7 @@ width: 100px;
     text-align: center;
     bottom:0;
 }
+
+#object_name{
+    font-family: 'Oswald', sans-serif;
+}
