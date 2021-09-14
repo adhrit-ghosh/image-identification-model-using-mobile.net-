@@ -1,59 +1,51 @@
-
 <html>
-  <head>
-    <title>MobileNet</title>
+
+<head>
+    <title>Real Time Image Identification App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
     <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
-CSS rules to specify
-  </head>
+</head>
 
-  <body>
+<body background="background.jpg">
     <center>
-<div class="col-xs-12 header_div">
-<h2>
-  Image Identification App<img src="logo.gif">
-</h2>
-</div>
-<div class="col-xs-12 col-sm-6 main_div">
-  <label> Webcam View -</label>
-  <div id="camera"></div>
-  <button onclick="take_ss()" class="btn btn-warning">Capture Image</button>
-</div>
-<div class="col-xs-12 col-sm-6 main_div">
-<label> SnapShot - </label>
-<div id="snapshot"></div>
-<button onclick="identify()" class="btn btn-info" > Identify Image </button>
-</div>
+        <h3 class=" btn btn-info heading">Real Time Image Identification App
+            <hr>
+            <center>
+                <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+                    We are using Mobilenet as a Model
+                    <br>
+                    <div class="heading_div2">
+                        Mobilenet model is trained on more than 1.3 million images
+                    </div>
+                </div>
+            </center>
+            <br>
+        </h3>
+        <br><br>
+
+        <p class="btn btn-success result_para_tag">Object :
+            <span id="object_name "></span>
+        </p>
+
+        <br><br>
+        <p class="btn btn-success result_para_tag">Accuracy :
+            <span id="object_accuracy"></span>
+        </p>
+
     </center>
-<div class="col-xs-12 result" >
-  <img id="bulb" src="blub.gif">
-  <h4 class="col-xs-12 col-sm-6" id="object_name"></h4>
-</div>
-<div class="copyright_footer"> Developed by -Adhrit Ghosh</div>
 
-    
-<script src="main.js"></script>
-  </body>
+    <div class="copy_right_footer">
+        Developed by Adhrit Ghosh
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
 </html>
-
-
-
-
-
-
-
-
- 
-
